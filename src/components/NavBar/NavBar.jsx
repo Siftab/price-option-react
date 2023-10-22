@@ -20,7 +20,7 @@ const NavBar = () => {
                <BiPowerOff></BiPowerOff>
                :<BiMenu ></BiMenu>}
                </div>
-          <ul className={`md:flex duration-700 absolute ml-10 p-4 bg-yellow-300 ${open===true? 'top-16':"-top-60"} `} >
+          <ul className={`md:flex duration-700 absolute md:static  p-4 bg-yellow-300 ${open===true? 'top-16':"-top-60"} ${open===true? 'ml-10':''} `} >
             {/* it also can be done {open===true? '': 'hidden'} */}
           {
                 routes.map(route=><LinkNav key={route.id}route={route}></LinkNav>)
